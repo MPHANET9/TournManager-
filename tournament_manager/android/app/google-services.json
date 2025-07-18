@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "190425667360",
+    "project_id": "tournmanager-6d41b",
+    "storage_bucket": "tournmanager-6d41b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190425667360:android:f75f000e1a7d5a2616a945",
+        "android_client_info": {
+          "package_name": "com.example.tournament_manager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIJsf9ua0oX4khwWpXoL7rSQO8CoIN70M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

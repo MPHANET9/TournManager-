@@ -1,6 +1,28 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  if (kIsWeb) {
+    // Ensure that Firebase is initialized for web
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+        apiKey: "AIzaSyCpEHg7U3cxtf_MnxD88lm5Sbg_PHsSmk0",
+        authDomain: "tournmanager-6d41b.firebaseapp.com",
+        projectId: "tournmanager-6d41b",
+        storageBucket: "tournmanager-6d41b.firebasestorage.app",
+        messagingSenderId: "190425667360",
+        appId: "1:190425667360:web:b44d25c3e2509b8416a945",
+        measurementId: "G-PKLETHP7TN",
+      ),
+    );
+  } else {
+    // Ensure that Firebase is initialized for mobile platforms
+    await Firebase.initializeApp();
+  }
+
   runApp(const MyApp());
 }
 
